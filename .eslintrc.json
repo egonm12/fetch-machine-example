@@ -1,0 +1,35 @@
+{
+  "env": {
+    "browser": true,
+    "jasmine": true,
+    "jest": true,
+    "es6": true
+  },
+
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
+  ],
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "detect"
+    }
+  },
+  "plugins": ["react", "@typescript-eslint", "prettier", "mocha"],
+  "rules": {
+    "prettier/prettier": ["error"],
+    "@typescript-eslint/indent": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/explicit-member-accessibility": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-empty-interface": "off",
+    "react/prop-types": "off",
+    "@typescript-eslint/camelcase": "off",
+    "mocha/no-exclusive-tests": "error"
+  }
+}
